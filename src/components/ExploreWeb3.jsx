@@ -70,7 +70,7 @@ const ExploreWeb3 = () => {
         <div className="absolute bottom-[-10%] left-[-5%] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-blue-600/10 rounded-full blur-[80px] md:blur-[120px] pointer-events-none"></div>
         
         <img src="/images/bitcoin-3.png" alt="" className="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 w-8 md:w-20 opacity-50 md:opacity-100 spinning-globe" />
-        <img src="/images/globe.png" alt="" className="absolute right-4 md:right-10 top-10 md:top-20 w-16 md:w-32 spinning-globe" />
+        <img src="/images/globe.png" alt="" className="absolute right-4 md:right-10 top-10 md:top-20 w-16 md:w-32 spinning-globe hidden lg:flex" />
         <img src="/images/element-1.png" alt="" className="absolute right-0 bottom-0 w-40 md:w-72 " />
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 relative z-10 gap-6">

@@ -15,7 +15,7 @@ const FindCrypto = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="md:row-span-2 bg-[#0F1E2E] rounded-xl p-6 md:p-8 md:pb-0 flex flex-col justify-between relative overflow-hidden min-h-[450px] md:min-h-[600px]">
+          <div className="md:row-span-2 bg-[#0F1E2E] rounded-xl p-6 md:p-8  pb-0 flex flex-col justify-between relative overflow-hidden min-h-[450px] md:min-h-[600px]">
             <div>
               <h3 className="text-xl md:text-2xl font-bold mb-4">Connect to Dapps</h3>
               <p className="text-gray-400 text-sm leading-relaxed max-w-[200px]">
@@ -30,29 +30,29 @@ const FindCrypto = () => {
           <div className="bg-[#0F1E2E] rounded-xl p-6 md:p-8 pb-0 flex flex-col relative overflow-hidden min-h-[200px] md:min-h-[240px]">
             <h3 className="text-xl md:text-2xl font-bold mb-2">Missing Funds</h3>
             <p className="text-gray-400 text-sm mb-4">Lost access to funds or missing funds? Click here.</p>
-            <img src="/images/trade.png" alt="Phone lock" className="absolute top-24 md:top-20 right-4 h-16 md:h-auto" />
+            <img src="/images/trade.png" alt="Phone lock" className="absolute lg:top-24 top-20 md:top-20 right-4 h-36 md:h-auto" />
           </div>
 
           <div className="bg-[#0F1E2E] rounded-xl p-6 md:p-8 flex flex-col relative overflow-hidden min-h-[200px] md:min-h-[240px]">
             <h3 className="text-xl md:text-2xl font-bold mb-2">High Fee</h3>
             <p className="text-gray-400 text-sm mb-4">Transaction fees too high? Click here.</p>
-            <img src="/images/spot.png" alt="Chart with magnifier" className="absolute top-28 md:top-24 right-4 h-16 md:h-auto" />
+            <img src="/images/spot.png" alt="Chart with magnifier" className="absolute lg:top-28 top-20 md:top-24 right-4 h-36 md:h-auto" />
           </div>
 
           <div className="bg-[#0F1E2E] rounded-xl p-6 md:p-8 flex flex-col relative overflow-hidden min-h-[200px] md:min-h-[240px]">
             <h3 className="text-xl md:text-2xl font-bold mb-2">24/7 Support</h3>
             <p className="text-gray-400 text-sm mb-4 max-w-[70%] md:max-w-none">Count on us for round-the-clock support, help whenever you need it.</p>
-            <img src="/images/support.png" alt="Support headset" className="absolute right-4 top-28 md:top-28 h-12 md:h-auto" />
-            <img src="/images/bitcoin-2.png" alt="Small coin" className="absolute bottom-6 md:bottom-8 left-6 md:left-8 h-6 md:h-auto" />
+            <img src="/images/support.png" alt="Support headset" className="absolute right-4 lg:top-28 top-24 md:top-28 h-36 md:h-auto" />
+            <img src="/images/bitcoin-2.png" alt="Small coin" className="absolute bottom-6 md:bottom-8 left-6 md:left-8 h-12 md:h-auto" />
           </div>
 
           <div className="bg-[#0F1E2E] rounded-xl p-6 md:p-8 flex flex-col relative overflow-hidden min-h-[200px] md:min-h-[240px]">
             <h3 className="text-xl md:text-2xl font-bold mb-2">Trusted & Secure</h3>
             <p className="text-gray-400 text-sm mb-4">Your assets2. On your terms. At your fingertips.</p>
             <div className="mt-auto flex justify-center">
-              <img src="/images/trusted.png" alt="Hands holding shield" className="absolute top-28 md:top-24 right-4 h-16 md:h-auto" />
+              <img src="/images/trusted.png" alt="Hands holding shield" className="absolute top-28 md:top-24 right-4 h-36 md:h-auto" />
             </div>
-            <img src="/images/coins.png" alt="Floating coins" className="absolute bottom-6 md:bottom-8 left-6 md:left-8 h-8 md:h-auto" />
+            <img src="/images/coins.png" alt="Floating coins" className="absolute bottom-6 md:bottom-8 left-6 md:left-8 h-12 md:h-auto" />
           </div>
         </div>
       </div>
