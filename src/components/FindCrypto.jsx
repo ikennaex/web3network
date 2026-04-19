@@ -6,7 +6,7 @@ const FindCrypto = () => {
       <div className='max-w-7xl mx-auto'>
         <div className="flex flex-col md:flex-row justify-between items-start mb-12 gap-6 md:gap-8">
           <h2 className="text-2xl md:text-4xl font-bold leading-tight">
-            Find & Secure <span className="text-[#38bdf8] underline decoration-2 underline-offset-4">crypto </span> 
+            Find & Secure <span className="text-[#3A96FF] underline decoration-2 underline-offset-4">crypto </span> 
             Now!
           </h2>
           <p className="text-gray-400 max-w-sm text-sm leading-relaxed">
@@ -43,7 +43,7 @@ const FindCrypto = () => {
             <h3 className="text-xl md:text-2xl font-bold mb-2">24/7 Support</h3>
             <p className="text-gray-400 text-sm mb-4 max-w-[70%] md:max-w-none">Count on us for round-the-clock support, help whenever you need it.</p>
             <img src="/images/support.png" alt="Support headset" className="absolute right-4 lg:top-28 top-24 md:top-28 h-36 md:h-auto" />
-            <img src="/images/bitcoin-2.png" alt="Small coin" className="absolute bottom-6 md:bottom-8 left-6 md:left-8 h-12 md:h-auto" />
+            <img src="/images/bitcoin-2.png" alt="Small coin" className="hidden lg:flex absolute bottom-6 md:bottom-8 left-6 md:left-8 h-12 md:h-auto" />
           </div>
 
           <div className="bg-[#0F1E2E] rounded-xl p-6 md:p-8 flex flex-col relative overflow-hidden min-h-[200px] md:min-h-[240px]">
@@ -52,7 +52,7 @@ const FindCrypto = () => {
             <div className="mt-auto flex justify-center">
               <img src="/images/trusted.png" alt="Hands holding shield" className="absolute top-28 md:top-24 right-4 h-36 md:h-auto" />
             </div>
-            <img src="/images/coins.png" alt="Floating coins" className="absolute bottom-6 md:bottom-8 left-6 md:left-8 h-12 md:h-auto" />
+            <img src="/images/coins.png" alt="Floating coins" className="hidden lg:flex absolute bottom-6 md:bottom-8 left-6 md:left-8 h-12 md:h-auto" />
           </div>
         </div>
       </div>

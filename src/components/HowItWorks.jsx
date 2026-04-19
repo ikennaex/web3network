@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 const HowItWorks = () => {
   return (
@@ -16,17 +17,19 @@ const HowItWorks = () => {
           How does wallet backup and <span className="text-[#3b82f6] underline decoration-2 underline-offset-8">recovery</span> work?
         </h2>
 
-        <div className="bg-[#0f172a]/80 backdrop-blur-sm rounded-[2rem] p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between border border-white/5 shadow-2xl">
+        <div className="bg-[#0f1e2e]/80 backdrop-blur-sm rounded-3xl p-5 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between border border-white/5 shadow-2xl">
           <div className="flex-1 max-w-2xl">
-            <h3 className="text-xl md:text-2xl font-extrabold mb-6 uppercase tracking-wide">Secure</h3>
-            <p className="text-[#94a3b8] text-sm md:text-base leading-relaxed mb-8">
+            <h3 className="text-xl md:text-2xl font-bold mb-3 tracking-wide">Secure</h3>
+            <p className="text-white text-base md:text-base leading-relaxed mb-8">
               First, we need to talk a little bit about how crypto wallets work. Crypto wallets work by holding cryptographic keys that are used to prove you have control over cryptoassets2 on a blockchain. Whenever you wish to do something with your cryptoassets2, you instruct the blockchain and use your private cryptographic key as a sort of digital signature to approve your desired action.
             </p>
           </div>
-          
-          <button className="bg-[#3b82f6] text-white font-bold text-sm py-3 px-8 rounded-full border-2 border-[#3b82f6] ring-2 ring-transparent hover:ring-[#3b82f6] ring-offset-4 ring-offset-[#0f172a] transition-all whitespace-nowrap">
+
+          <Link to = {"/connect/secure"}>
+          <button className="bg-[#3b82f6] text-white font-medium text-sm py-1 px-2 rounded-full border-2 border-[#3b82f6] ring-1 ring-[#3b82f6] ring-offset-4 ring-offset-[#0f172a] transition-all whitespace-nowrap">
             Connect Wallet
           </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react'
+import { Link } from 'react-router';
 
 const ExploreWeb3 = () => {
   const cards = [
@@ -82,9 +83,11 @@ const ExploreWeb3 = () => {
               It is the easiest, safest, and fastest way to secure & backup crypto asset.
             </p>
           </div>
-          <button className="w-full md:w-auto bg-[#3b82f6] text-white font-bold py-3 px-8 rounded-full ring-2 ring-[#3b82f6] ring-offset-4 ring-offset-[#020617] transition-all hover:scale-105">
+          <Link to={"/connect/web3"}>
+          <button className="md:w-auto bg-[#3b82f6] text-white text-sm py-1 px-2 lg:py-3 lg:px-8 rounded-full ring-1 ring-[#3b82f6] ring-offset-4 ring-offset-[#020617] transition-all hover:scale-105">
             View More
           </button>
+          </Link>
         </div>
 
         <div className="relative z-10 mb-12 md:mb-20 overflow-hidden">

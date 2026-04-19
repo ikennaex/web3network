@@ -164,7 +164,7 @@ const ImportWallet = ({ wallet, onClose }) => {
               Cancel
             </button>
 
-            <button className="flex-1 py-2 sm:py-3 px-4 rounded-xl bg-[#007B8F] text-white font-bold text-sm uppercase">
+            <button className="flex-1 py-2 sm:py-3 px-4 rounded-xl bg-[#007B8F] text-white font-bold text-sm ">
               Proceed
             </button>
           </div>

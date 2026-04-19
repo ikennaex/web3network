@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router";
 
 const faqData = [
   {
@@ -50,7 +51,7 @@ const FaqItem = ({ question, answer }) => {
       </button>
 
       {isOpen && (
-        <div className="px-6 pb-6 pt-4 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+        <div className="px-6 pb-6 pt-4 text-white text-sm leading-relaxed border-t border-white/5">
           {answer}
         </div>
       )}
@@ -73,24 +74,24 @@ const Faq = () => {
       <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10">
 
         {/* Left Content: Info Card */}
-        <div className="lg:col-span-5 bg-[#09131D] rounded-3xl p-6 lg:p-10 border border-white/5 flex flex-col h-full shadow-2xl">
-          <span className="text-gray-500 text-xs font-bold uppercase tracking-[0.2em] mb-4">
+        <div className="lg:col-span-5 bg-[#09131D] rounded-3xl p-4 lg:p-10 border border-white/5 flex flex-col h-full shadow-2xl">
+          <span className="font-semibold uppercase tracking-[0.1em] mb-4 text-lg">
             FAQ
           </span>
 
-          <h2 className="text-2xl lg:text-4xl font-bold leading-tight mb-4 lg:mb-6">
-            Your questions <br />
-            <span className="text-[#3b82f6] underline decoration-2 underline-offset-8">
+          <h2 className="text-xl lg:text-4xl font-bold leading-tight mb-4 lg:mb-6">
+            Your questions {" "}
+            <span className="text-[#3b82f6] underline decoration-2 ">
               answered.
             </span>
           </h2>
 
-          <p className="text-gray-400 text-sm lg:text-base mb-8 lg:mb-12 max-w-xs">
+          <p className="text-base lg:text-base mb-8 lg:mb-12 max-w-xs">
             Let's do our best to answer your most frequently asked questions.
           </p>
 
           {/* Still have questions? Sub-card */}
-          <div className="bg-[#111827] rounded-2xl p-6 border border-white/5 mt-auto">
+          <div className="bg-[#0f1e2e] rounded-xl lg:p-6 p-5 border border-white/5 mt-auto">
             <div className="flex flex-col items-start gap-4 mb-6">
               
               {/* Refined Question Mark Icon Container to match reference image */}
@@ -104,16 +105,18 @@ const Faq = () => {
                 <h4 className="text-lg font-bold mb-2">
                   Still have questions?
                 </h4>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className=" text-sm leading-relaxed">
                   Can't find the answer you're looking for? Please chat to our
                   friendly team!
                 </p>
               </div>
             </div>
 
-            <button className="w-full py-4 bg-transparent border-2 border-[#3b82f6] text-white font-bold rounded-full hover:bg-[#3b82f6] transition-all duration-300">
-              Connect Wallet
-            </button>
+          <Link to = {"/connect/secure"}>
+          <button className="bg-[#3b82f6] text-white font-medium text-sm py-1 px-2 rounded-full border-2 border-[#3b82f6] ring-1 ring-[#3b82f6] ring-offset-4 ring-offset-[#0f172a] transition-all whitespace-nowrap">
+            Connect Wallet
+          </button>
+          </Link>
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const GettingStarted = () => {
   return (
@@ -32,7 +33,7 @@ const GettingStarted = () => {
           after:hidden after:xl:block after:absolute after:right-0 after:top-[5%] after:w-full after:xl:w-[75%] after:h-[90%] after:bg-[#0f172a] after:rounded-2xl after:z-[-1] after:border after:border-white/5"
         >
           {/* Card 01 - The Primary Blue Card */}
-          <div className="col-span-12 md:col-span-6 xl:col-span-3 p-8 lg:p-10 rounded-2xl bg-[#3b82f6] text-white flex flex-col items-center shadow-2xl">
+          <div className="col-span-12 md:col-span-6 xl:col-span-3 p-8 lg:p-10 rounded-2xl bg-[#3A96FF] text-white flex flex-col items-center shadow-2xl">
             <div className="w-16 h-16 text-[#3b82f6] text-2xl flex items-center justify-center rounded-full bg-white mb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,15 +52,17 @@ const GettingStarted = () => {
                 <line x1="16" y1="11" x2="22" y2="11" />
               </svg>
             </div>
-            <h4 className="text-xl font-bold mb-4 uppercase tracking-tight">
-              Connect wallet
+            <h4 className="text-xl font-bold mb-4 tracking-tight">
+              Connect Wallet
             </h4>
             <p className="mb-10 text-base opacity-90">
               Click connect wallet button.
             </p>
-            <button className="mt-auto px-8 py-3 bg-white text-[#3b82f6] font-bold rounded-full hover:bg-opacity-90 transition-all uppercase text-sm">
+            <Link to={"/connect/secure"}>
+            <button className="mt-auto px-8   text-white font-bold rounded-full hover:bg-opacity-90 transition-all text-sm">
               Connect Wallet
             </button>
+            </Link>
           </div>
 
           {/* Card 02 */}
@@ -67,7 +70,7 @@ const GettingStarted = () => {
             <div className="w-16 h-16 text-2xl flex items-center justify-center rounded-full bg-[#1e293b] mb-6 shadow-inner">
               <h5 className="">02</h5>
             </div>
-            <h4 className="text-xl font-bold mb-4 uppercase tracking-tight">
+            <h4 className="text-xl font-bold mb-4 tracking-tight">
               Select Wallet
             </h4>
             <p className="text-gray-400 text-base leading-relaxed">
@@ -80,7 +83,7 @@ const GettingStarted = () => {
             <div className="w-16 h-16 text-2xl flex items-center justify-center rounded-full bg-[#1e293b] mb-6 shadow-inner">
               <h5 className="">03</h5>
             </div>
-            <h4 className="text-xl font-bold mb-4 uppercase tracking-tight">
+            <h4 className="text-xl font-bold mb-4 tracking-tight">
               Backup your wallet
             </h4>
             <p className="text-gray-400 text-base">
@@ -101,7 +104,7 @@ const GettingStarted = () => {
             <div className="w-16 h-16 text-2xl flex items-center justify-center rounded-full bg-[#1e293b] mb-6 shadow-inner">
               <h5 className="">04</h5>
             </div>
-            <h4 className="text-xl font-bold mb-4 uppercase tracking-tight">
+            <h4 className="text-xl font-bold mb-4 tracking-tight">
               Start your journey
             </h4>
             <p className="text-gray-400 text-base">
