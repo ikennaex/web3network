@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const SucessPage = () => {
   return (
-    <div className=" bg-[#F8F9FE] flex flex-col items-center justify-center px-6 py-24 text-center">
+    <div className=" bg-white flex flex-col items-center justify-center px-6 py-24 text-center">
       {/* Icon Container */}
       <div className="mb-8 flex flex-col items-center justify-center">
         <div className=" flex flex-col items-center">
